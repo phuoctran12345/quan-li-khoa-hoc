@@ -1,10 +1,9 @@
-package view;
-import java.util.ArrayList;
+package AssN7B.view;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public abstract class Menu<T> {
-
     protected String title;
     protected ArrayList<T> mChon;
 
@@ -26,13 +25,12 @@ public abstract class Menu<T> {
             System.out.println((i + 1) + "." + mChon.get(i));
         }
         System.out.println("-------------------------------------");
-
     }
 
     public int getSelected() {
         display();
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter selection..");
+        System.out.print("Enter selection: ");
         return Integer.parseInt(sc.nextLine());
     }
 
@@ -47,5 +45,4 @@ public abstract class Menu<T> {
             }
         }
     }
-
 }

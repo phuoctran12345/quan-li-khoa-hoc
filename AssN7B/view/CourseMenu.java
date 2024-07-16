@@ -1,18 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package view;
 
-import controller.CourseList;
+package AssN7B.view;
+
+
+import AssN7B.controller.CourseList;
+
 import java.util.Scanner;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
-/**
- *
- * @author OS
- */
+
 public class CourseMenu extends Menu{
     CourseList courseList  = new CourseList();
     Scanner sc = new Scanner(System.in);

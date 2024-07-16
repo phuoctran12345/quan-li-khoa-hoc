@@ -1,10 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package controller;
 
-import model.Course;
+package AssN7B.controller;
+
+import AssN7B.model.Course;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -13,7 +11,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.Predicate;
 
 /**
  *
@@ -25,7 +22,7 @@ public class CourseList {
     
     
     public static void readFile() throws IOException {
-    try (BufferedReader br = new BufferedReader(new FileReader("/Users/tranhongphuoc/NetBeansProjects/CourseManagement/src/main/java/controller/course.txt"))) {
+    try (BufferedReader br = new BufferedReader(new FileReader("src/AssN7B/course.txt"))) {
         String line;
         
         while ((line = br.readLine()) != null) {
@@ -92,7 +89,7 @@ public class CourseList {
 
     
  public static void writeFile() throws IOException {
-    try (BufferedWriter bw = new BufferedWriter(new FileWriter("/Users/tranhongphuoc/NetBeansProjects/CourseManagement/src/main/java/controller/course.txt"))) {
+    try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/AssN7B/course.txt"))) {
         for (Course course : courseList) {
             bw.write("title=" + course.getTitle() + ", author=" + course.getAuthor() + ", publishedYear=" + course.getPublishedYear() + ", unitPrice=" + course.getUnitPrice() + ", quantity=" + course.getQuantity() + "\n");
         }

@@ -1,7 +1,0 @@
-view/CourseMenu.class
-view/Menu.class
-controller/CourseList.class
-view/CourseMenu$1.class
-controller/CourseManagement.class
-view/Utils.class
-model/Course.class
